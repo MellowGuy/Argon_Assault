@@ -41,7 +41,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -10, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23441245611129662
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -97,8 +97,10 @@ MonoBehaviour:
   xSpeed: 10
   ySpeed: 10
   positionPitchFactor: -6
-  controlPitchFactor: -7.5
+  controlPitchFactor: -20
   positionYawFactor: 5
-  controlRollFactor: -7.5
+  controlRollFactor: -30
   xRange: 5
   yRange: 3.5
+  xThrow: 0
+  yThrow: 0

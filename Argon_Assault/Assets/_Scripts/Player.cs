@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 	public float xRange = 5f;
 	public float yRange = 3.5f;
 
-	float xThrow, yThrow;
+	public float xThrow, yThrow;
 
 	// Use this for initialization
 	void Start()

@@ -4,35 +4,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 	[Header("Ship Flight Adjustments")]
 
-	[Tooltip("In meters per sec.")]	[SerializeField] float xSpeed = 10f;
+	[Tooltip("In meters per sec.")]	[SerializeField]	float xSpeed = 10f;
 	[Tooltip("In meters per sec.")] [SerializeField] float ySpeed = 10f;
-
+	
+	[Header("Rotation Factors")]
 	[SerializeField] float positionPitchFactor = -6f;
 	[SerializeField] float controlPitchFactor = -7.5f;
-
 	[SerializeField] float positionYawFactor = 5f;
 	[SerializeField] float controlRollFactor = -7.5f;
 
+	[Header("Screen Ranges")]
 	public float xRange = 5f;
 	public float yRange = 3.5f;
-
 	public float xThrow, yThrow;
 
-	// Use this for initialization
-	void Start()
-	{
+	bool canMove = true;
 
+	void OnPlayerDeath() //Called by string reference
+	{
+		canMove = false;
+		print("Movment Stopped");
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		ProcessTranslation();
-		ProcessRotation();
+		if (canMove)
+		{
+			ProcessTranslation();
+			ProcessRotation();
+		}
+		
 	}
 
 	private void ProcessRotation()

@@ -182,6 +182,7 @@ Transform:
   m_Father: {fileID: 828115184}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &118879910
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +215,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -19.866001, z: 0}
+=======
+>>>>>>> parent of 1fd9459... Made SceneLoader script
 --- !u!1001 &290315834
 Prefab:
   m_ObjectHideFlags: 0
@@ -1010,6 +1013,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1073605032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1047,8 @@ Transform:
   m_PrefabParentObject: {fileID: 4551646976051914, guid: f9620c5151199b741a92274ac27f07db,
     type: 2}
   m_PrefabInternal: {fileID: 15669667}
+=======
+>>>>>>> parent of 1fd9459... Made SceneLoader script
 --- !u!1 &1251189275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1311,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4208998662492894, guid: 669b557267dbf2b4b84f3ebda9671601, type: 2}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4208998662492894, guid: 669b557267dbf2b4b84f3ebda9671601, type: 2}
@@ -1380,6 +1387,27 @@ Transform:
   m_PrefabParentObject: {fileID: 4208998662492894, guid: 669b557267dbf2b4b84f3ebda9671601,
     type: 2}
   m_PrefabInternal: {fileID: 1770826990}
+=======
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360735700754888, guid: 5c97d42cb0fb3124390e9c85ff5e277d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198614965079345296, guid: 5c97d42cb0fb3124390e9c85ff5e277d,
+        type: 2}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198614965079345296, guid: 5c97d42cb0fb3124390e9c85ff5e277d,
+        type: 2}
+      propertyPath: randomSeed
+      value: -1799597678
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5c97d42cb0fb3124390e9c85ff5e277d, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> parent of 1fd9459... Made SceneLoader script
 --- !u!1 &1781351888
 GameObject:
   m_ObjectHideFlags: 0

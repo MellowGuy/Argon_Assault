@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicPlayer : MonoBehaviour
-{ 
+{
+
+	public float waitTime = 3f;
+
 	// Awake
 	void Awake()
 	{
@@ -14,5 +18,17 @@ public class MusicPlayer : MonoBehaviour
 		}
 		//singleton pattern
 		DontDestroyOnLoad(gameObject);
+	}
+
+	// Use this for initialization
+	void Start()
+	{
+		Invoke("LoadFirstScene", waitTime);
+	}
+
+	void LoadFirstScene()
+	{
+		SceneManager.LoadScene(1);
+		Debug.Log("Scene Loaded");
 	}
 }
